@@ -62,7 +62,7 @@ Users should be able to:
 
 ## **Let's Connect 👋**
 
-<div align=center id="lets-connect>
+<div align=center id="lets-connect">
 
   <a href="https://sudhanshupatel.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Portfolio">
