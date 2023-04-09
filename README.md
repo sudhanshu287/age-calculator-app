@@ -64,9 +64,10 @@ Users should be able to:
 
 <div align=center id="lets-connect>
 
-<a href="https://sudhanshupatel.vercel.app/" target="_blank">
+  <a href="https://sudhanshupatel.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white" alt=Portfolio>
   </a>&nbsp;&nbsp;&nbsp;
+
   <a href="https://linkedin.com/in/sudhanshu287" target="_blank">
     <img src="https://img.shields.io/badge/linkedin%20Profile-%2300acee.svg?color=405DE6&style=for-the-badge&logo=linkedin&logoColor=white" alt=Linkedin>
   </a>&nbsp;&nbsp;&nbsp;
