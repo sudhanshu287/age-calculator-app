@@ -10,11 +10,10 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Let's Connect](#lets-connect)
 
 ## Overview
 
@@ -35,13 +34,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./preview-images/age-calculator-desktop-preview.png)
+
+![](./preview-images/age-calculator-mobile-preview.png)
+
 
 
 ### Links
 
-- Solution URL: [Click Here](https://github.com/sudhanshu287/FrontendMentorChallenges/tree/main/age-calculator-app-main)
-- Live Site URL: [Click Here](https://age-calculator-app-challenge-2.vercel.app/)
+- Solution URL: [Click Here](https://github.com/sudhanshu287/age-calculator-app)
+- Live Site URL: [Click Here](https://age-calculator-app-sepia.vercel.app/)
 
 ## My process
 
@@ -60,7 +62,8 @@ Users should be able to:
 
 ## **Let's Connect 👋**
 
-<div align=center>
+<div align=center id="lets-connect>
+
 <a href="https://sudhanshupatel.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white" alt=Portfolio>
   </a>&nbsp;&nbsp;&nbsp;
