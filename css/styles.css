@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+/* ----------CSS Variables------------ */
+:root {
+  --Purple-color: hsl(259, 100%, 65%);
+  --Light-red-color: hsl(0, 100%, 67%);
+  --White-color: hsl(0, 0%, 100%);
+  --Off-white-color: hsl(0, 0%, 94%);
+  --Light-grey-color: hsl(0, 0%, 86%);
+  --Smokey-grey-color: hsl(0, 1%, 44%);
+  --Off-black-color: hsl(0, 0%, 8%);
+}
+
+
+/* ----------------Reset---------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------Main CSS-------------- */
+
+body{
+    font-family: "Popins",sans-serif;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background: var(--Light-grey-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.age__calculator{
+    width:550px;
+    background-color: var(--White-color);
+    padding: 3rem;
+    border-radius: 1rem 1rem 8rem 1rem;
+
+}
+.input__container{
+    display: flex;
+    gap: 1rem;
+    height: 70px;
+}
+.input__box{
+    width: 100px;
+    height: 30px;
+}
+.input__box label{
+    color:var(--Smokey-grey-color);
+    font-size: 12px;
+    font-weight: 800;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.input__box input{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    border: 2px solid var(--Light-grey-color);
+    border-radius: 6px;
+    padding: 1rem;
+}
+.input__box input::placeholder{
+    /* height: 10px; */
+    color:var(--Smokey-grey-color);
+    font-size: 1rem;
+    font-weight: 800;
+}
+.input__box span{
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 8px;
+    font-style: italic;
+    color:var(--Light-red-color);
+}
+.input__box.error input{
+    border-color: var(--Light-red-color);
+    border:1px solid var(--Light-red-color);
+}
+.input__box.error label{
+    color:var(--Light-red-color);
+}
+.button__container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 30px;
+}
+.button__container .line{
+    width:100%;
+    height: 2px;
+    position: absolute;
+    background-color:var(--Light-grey-color);
+    top: 1.8rem;
+}
+.button__container .button{
+    position: absolute;
+    top: 0;
+    right:0rem;
+}
+.button button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.button img{
+    background-color: var(--Purple-color);
+    border-radius: 50%;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.age__display{
+    margin-top: 2rem;
+    font-weight: 800;
+    line-height: 3rem;
+    font-style: italic;
+}
+
+.number{
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--Purple-color);
+    padding-bottom:10px ;
+}
+.number .number__dash__line{
+    width:40px;
+    height: 12px;
+    display: inline-block;
+    background-color: var(--Purple-color);
+}
+.text{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+@media screen and (max-width:376px){
+    .age__calculator{
+        width:300px;
+        padding: 1.5rem;
+    }
+    .button__container .button{
+        position: absolute;
+        top: 0;
+        right:40%;
+    }
+    .input__box input::placeholder{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .number{
+        font-size: 3.5rem;
+    }
+    .number .number__dash__line{
+        width: 20px;
+        height: 10px;
+    }
+    .text{
+        font-size: 3rem;
+    }
+}

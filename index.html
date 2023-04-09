@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main class="container" role="main">
+      <div class="age__calculator">
+        <div class="input__container">
+          <div class="input__box">
+            <label for="">DAY</label>
+            <input type="text" placeholder="DD" id="day-value"/>
+            <span class="input__error"> </span>
+          </div>
+          <div class="input__box">
+            <label for="">MONTH</label>
+            <input type="text" placeholder="MM" id="month-value"/>
+            <span class="input__error"> </span>
+          </div>
+          <div class="input__box">
+            <label for="">YEAR</label>
+            <input type="text" placeholder="YYYY" id="year-value"/>
+            <span class="input__error"> </span>
+          </div>
+        </div>
+        <div class="button__container">
+          <div class="line"></div>
+          <div class="button">
+            <button onclick="calculateAge()">
+              <img src="./assets/images/icon-arrow.svg" alt="button-icon" />
+            </button>
+          </div>
+        </div>
+        <div class="age__display">
+          <div class="year__display">
+            <span class="number" id="years-count">
+              <span class="number__dash__line"></span>
+              <span class="number__dash__line"></span>
+            </span>
+            <span class="text">years</span>
+          </div>
+          <div class="month__display">
+            <span class="number" id="months-count">
+              <span class="number__dash__line"></span>
+              <span class="number__dash__line"></span>
+            </span>
+            <span class="text">months</span>
+          </div>
+          <div class="day__display">
+            <span class="number" id="days-count">
+              <span class="number__dash__line"></span>
+              <span class="number__dash__line"></span>
+            </span>
+            <span class="text">days</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
