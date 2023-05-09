@@ -130,8 +130,6 @@ const getCalculatedAge = (inputDay, inputMonth, inputYear) => {
 
     return [days,months,years];
 };
-// getCalculatedAge(5, 6, 2009);
-// console.log(validateDate(new Date('31/4/2022')));
 const calculateAge = () => {
     let dateString = String(day.value + "/" + month.value + "/" + year.value);
     console.log(validateInput(day.value,month.value,year.value));

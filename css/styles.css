@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
 /* ----------CSS Variables------------ */
 :root {
+  /* Colors */
   --Purple-color: hsl(259, 100%, 65%);
   --Light-red-color: hsl(0, 100%, 67%);
   --White-color: hsl(0, 0%, 100%);
@@ -8,160 +9,227 @@
   --Light-grey-color: hsl(0, 0%, 86%);
   --Smokey-grey-color: hsl(0, 1%, 44%);
   --Off-black-color: hsl(0, 0%, 8%);
+  /* Typography */
+  --fs-1: 0.8rem;
+  --fs-2: 1rem;
+  --fs-3: 3rem;
+  --calculator-padding: 4rem 1.5rem;
+  --calculator-border-radius: 1.5rem 1.5rem 6rem 1.5rem;
+  --padding-button: 15px;
 }
-
 
 /* ----------------Reset---------------- */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* ----------------Main CSS-------------- */
 
-body{
-    font-family: "Popins",sans-serif;
+body {
+  font-family: "Popins", sans-serif;
+  background-color: var(--Light-grey-color);
 }
-.container{
-    min-height: 100vh;
-    width: 100%;
-    background: var(--Light-grey-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.age__calculator{
-    width:550px;
-    background-color: var(--White-color);
-    padding: 3rem;
-    border-radius: 1rem 1rem 8rem 1rem;
-
+.age__calculator {
+  background-color: var(--White-color);
+  padding: var(--calculator-padding);
+  border-radius: var(--calculator-border-radius);
 }
-.input__container{
-    display: flex;
-    gap: 1rem;
-    height: 70px;
+.input__container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
 }
-.input__box{
-    width: 100px;
-    height: 30px;
+.input__box {
+  width: 75px;
+  height: 40px;
 }
-.input__box label{
-    color:var(--Smokey-grey-color);
-    font-size: 12px;
-    font-weight: 800;
-    display: inline-block;
-    margin-bottom: 8px;
+.input__box label {
+  color: var(--Smokey-grey-color);
+  font-size: var(--fs-1);
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 4px;
 }
-.input__box input{
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    font-weight: 700;
-    outline: none;
-    border: none;
-    border: 2px solid var(--Light-grey-color);
-    border-radius: 6px;
-    padding: 1rem;
+.input__box input {
+  width: 100%;
+  height: 100%;
+  font-size: var(--fs-2);
+  font-weight: 800;
+  outline: none;
+  border: none;
+  border: 2px solid var(--Light-grey-color);
+  border-radius: 6px;
+  padding: 10px;
 }
-.input__box input::placeholder{
-    /* height: 10px; */
-    color:var(--Smokey-grey-color);
-    font-size: 1rem;
-    font-weight: 800;
+.input__box input::placeholder {
+  color: var(--Smokey-grey-color);
+  font-size: var(--fs-2);
+  font-weight: 800;
 }
-.input__box span{
-    display: inline-block;
-    font-size: 14px;
-    margin-top: 8px;
-    font-style: italic;
-    color:var(--Light-red-color);
+.input__box span {
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 8px;
+  font-style: italic;
+  color: var(--Light-red-color);
 }
-.input__box.error input{
-    border-color: var(--Light-red-color);
-    border:1px solid var(--Light-red-color);
+.input__box.error input {
+  border-color: var(--Light-red-color);
+  border: 1px solid var(--Light-red-color);
 }
-.input__box.error label{
-    color:var(--Light-red-color);
+.input__box.error label {
+  color: var(--Light-red-color);
 }
-.button__container{
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: 30px;
+.button__container {
+  display: flex;
+  position: relative;
+  height: 60px;
 }
-.button__container .line{
-    width:100%;
-    height: 2px;
-    position: absolute;
-    background-color:var(--Light-grey-color);
-    top: 1.8rem;
+.button__container .line {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: var(--Light-grey-color);
+  top: 1.8rem;
 }
-.button__container .button{
-    position: absolute;
-    top: 0;
-    right:0rem;
+.button__container .button {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
 }
-.button button{
-    outline: none;
-    border: none;
-    background-color: transparent;
+.button button {
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
-.button img{
-    background-color: var(--Purple-color);
-    border-radius: 50%;
-    padding: .5rem;
-    cursor: pointer;
+.button img {
+  background-color: var(--Purple-color);
+  width: 70%;
+  border-radius: 50%;
+  padding: var(--padding-button);
+  cursor: pointer;
 }
 
-.age__display{
-    margin-top: 2rem;
-    font-weight: 800;
-    line-height: 3rem;
-    font-style: italic;
+.age__display {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 0.6;
+}
+.day__display,
+.month__display,
+.year__display {
+  display: flex;
+  gap: 30px;
+}
+.number {
+  font-size: var(--fs-3);
+  font-weight: bolder;
+  color: var(--Purple-color);
+  padding-bottom: 25px;
+}
+.number .dash__line {
+  font-size: var(--fs-3);
+  display: inline-flex;
+  font-style: italic;
+  align-items: center;
+  letter-spacing: -15px;
+}
+.text {
+  font-size: var(--fs-3);
+  font-style: italic;
+  font-weight: bolder;
 }
 
-.number{
-    font-size: 4rem;
-    font-weight: 800;
-    color: var(--Purple-color);
-    padding-bottom:10px ;
-}
-.number .number__dash__line{
-    width:40px;
-    height: 12px;
-    display: inline-block;
-    background-color: var(--Purple-color);
-}
-.text{
-    font-size: 3.5rem;
-    font-weight: 800;
+/* Media Query */
+
+@media screen and (min-width: 375px) {
+  :root {
+    /* Typography */
+    --fs-1: .8rem;
+    --fs-2: 1.2rem;
+    --fs-3: 3.5rem;
+  }
+  .input__box{
+    width: 90px;
+  }
 }
 
-@media screen and (max-width:376px){
-    .age__calculator{
-        width:300px;
-        padding: 1.5rem;
-    }
-    .button__container .button{
-        position: absolute;
-        top: 0;
-        right:40%;
-    }
-    .input__box input::placeholder{
-        font-size: 1.2rem;
-        font-weight: 700;
-    }
-    .number{
-        font-size: 3.5rem;
-    }
-    .number .number__dash__line{
-        width: 20px;
-        height: 10px;
-    }
-    .text{
-        font-size: 3rem;
-    }
+@media screen and (min-width:535px){
+    :root {
+        /* Typography */
+        --fs-1: .8rem;
+        --fs-2: 1.2rem;
+        --fs-3: 4rem;
+        --calculator-padding: 4rem 3rem;
+        --calculator-border-radius: 1.5rem 1.5rem 6rem 1.5rem;
+        --padding-button: 20px;
+      }
+      .input__box{
+        width: 100px;
+      }
+      .button img{
+        width: 80%;
+      }
+}
+
+@media screen and (min-width:767px){
+    :root {
+        /* Typography */
+        --fs-1: 1rem;
+        --fs-2: 1.4rem;
+        --fs-3: 5rem;
+        --calculator-padding: 4rem;
+        --calculator-border-radius: 1.5rem 1.5rem 6rem 1.5rem;
+        --padding-button: 20px;
+      }
+      .input__box{
+        width: 120px;
+      }
+      .button img{
+        width: 80%;
+      }
+}
+@media screen and (min-width:1024px){
+    :root {
+        /* Typography */
+        --fs-1: 1rem;
+        --fs-2: 2rem;
+        --fs-3: 6rem;
+        --calculator-padding: 4rem;
+        --calculator-border-radius: 1.5rem 1.5rem 10rem 1.5rem;
+        --padding-button: 25px;
+      }
+      .age__calculator{
+        width: 840px;
+      }
+      .input__box{
+        width: 160px;
+        height: 70px;
+      }
+      .button img{
+        width: 100%;
+      }
+      .button__container .line{
+        top: 2.5rem;
+      }
+      .button__container .button{
+        right: 0;
+        transform: translateX(0);
+      }
+      .number{
+        padding-bottom: 30px;
+      }
 }
